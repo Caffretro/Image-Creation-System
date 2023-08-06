@@ -309,7 +309,7 @@ export default function App() {
   // transfer user style images
   const handleTransferUserStyle = async () => {
 
-    if (selectedImage === null && selectedStyleImage === null) {
+    if (selectedImage === null || selectedStyleImage === null) {
       alert('Please upload a content image and a style image!');
     } else {
       const formData = new FormData();
